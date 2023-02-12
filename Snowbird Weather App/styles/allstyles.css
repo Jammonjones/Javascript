@@ -1,0 +1,55 @@
+html{
+    background-color: rgba(61, 101, 233, 0.2);
+}
+main{
+    display: block;
+    margin: 15px auto;
+    background-color: rgba(150, 150, 197, 0.2);
+    width: 360px;
+    min-height: 300px;
+    position: relative;
+    border: 3px solid purple;
+    border-radius: 5%;
+}
+.weather{
+    display: block;
+    position: absolute;
+    width: 80%;
+    
+    text-align: center;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.temp{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: black solid 5px;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    
+}
+.suggestions{
+    position: absolute;
+    top: 65%;
+    width: 100%;
+}
+h2{
+    text-align: center;
+}
+#temperature{
+    padding-top: 14px;
+}
+#suggg{
+    color: purple;
+    border-top: purple 2px solid;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.idk{
+    width: 360px;
+    text-align: center;
+    background-color: black;
+}
