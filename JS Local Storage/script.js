@@ -18,8 +18,19 @@ let myObj = {
 }
 
 // Print object to console
-    // console.log(myObj);
+console.log(myObj);
 
-// Save object to local storage then access it and print it
-    localStorage.setItem("keyName1", "aString...")
-    localStorage.setItem("keyName2", myObj);
+// Save object to local storage and show that it didn't work
+localStorage.setItem("keyName1", "aString...")
+localStorage.setItem("keyName2", myObj);
+
+// Remove items from local storage
+localStorage.removeItem("keyName");
+
+// Convert object to JSON string to it can be stored in local storage
+let myObjString = JSON.stringify(myObj);
+localStorage.setItem("myObjString", myObjString);
+
+// Convert object back from JSON string to JS Object
+let myObjUnstrung = JSON.parse(localStorage.getItem("myObjString"));
+console.log(myObjUnstrung.attribute2 * 2);
